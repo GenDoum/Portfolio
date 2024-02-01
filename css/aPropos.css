@@ -1,0 +1,90 @@
+.aPropos{
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+}
+
+.aPropos_Presentation{
+    display: flex;
+    flex-direction: column;
+}
+.aPropos_Photo{
+    width: 40%;
+    height: 400px;
+}
+
+.aPropos_Menu{
+
+}
+
+.aPropos_Boutons{
+    display: flex;
+    justify-content: space-evenly;   
+}
+
+.aPropos_Bouton_Presentation{
+    width: 15%;
+    height: 50px;
+    background-color: #3498db;
+    border: 2px solid #1c4966;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.aPropos_Bouton_Presentation:hover{
+    background-color: #1c4966;
+}
+
+.aPropos_Bouton_Langue{
+    width: 15%;
+    height: 50px;
+    background-color: #3498db;
+    border: 2px solid #1c4966;
+    border-radius: 8px;
+    color: white;
+    font-size: 15%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.aPropos_Bouton_Langue:hover{
+    background-color: #1c4966;
+}
+
+.aPropos_Bouton_SoftSkills{
+    width: 15%;
+    height: 50px;
+    background-color: #3498db;
+    border: 2px solid #1c4966;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.aPropos_Bouton_SoftSkills:hover{
+    background-color: #1c4966;
+}
+
+.aPropos_Bouton_Passions{
+    width: 15%;
+    height: 50px;
+    background-color: #3498db;
+    border: 2px solid #1c4966;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.aPropos_Bouton_Passions:hover{
+    background-color: #1c4966;
+    
+}

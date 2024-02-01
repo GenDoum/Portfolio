@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url();
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3498db; 
+    padding: 5px 0;
+    text-align: right;
+    z-index: 2;
+}
+
+.navbar a {
+    color: #fff; 
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 21px; 
+    position: relative;
+    display: inline-block;
+    padding: 9px 15px; 
+    border-radius: 8px; 
+    background-color: #2980b9; 
+    border: 2px solid #1c4966;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+}
+
+.navbar a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    background-color: #1c4966;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.image-buttons {
+    display: inline-block;
+    vertical-align: middle;
+    visibility: visible;
+    z-index: 1;
+}
+
+.image-buttons:hover .language-dropdown-content {
+    display: block;
+}
+
+.backgroundSky {
+    background: url('./Images/backgroundPortfolio.png') no-repeat center center fixed; 
+    background-size: cover; 
+    width: 100%; 
+    height: 90%; 
+}
