@@ -1,31 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: url();
+    font-family: 'poppins', sans-serif;
+    background-color: #DDD0C8;
 }
+
+/*---- Accueil ----*/
+
+.accueil {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #DDD0C8;
+    line-height: 1.0;
+    padding: 0 10%;
+}
+
+.accueil h1 {
+    font-size: 11.32vh;
+    margin: 0;
+    padding: 0;
+    color: #6d6159;
+}
+.nameMediaQuery{
+    display: none;
+    font-size: 11.3vh;
+    margin: 0;
+    padding: 0;
+    color: #6d6159;
+}
+.bvn {
+    font-size: 50px;
+    margin: 0;
+    padding: 0 2%;
+    color: black;
+}
+
+.statut {
+    font-size: 40px;
+    margin: 0;
+    padding: 0 2%;
+    color: rebeccapurple;
+}
+
+.statuMediaQuery{
+    display: none;
+    font-size: 40px;
+    margin: 0;
+    padding: 0 2%;
+    color: rebeccapurple;
+}
+
+
+/* Début buttons dans la navbar */
 
 .navbar {
+    display: flex;
+    justify-content: right;
+    align-items: center;
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    background-color: #3498db; 
-    padding: 5px 0;
+    background-color: #DDD0C8;
+    padding: 0.6% 0;
     text-align: right;
     z-index: 2;
-}
-
-.navbar a {
-    color: #fff; 
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 21px; 
-    position: relative;
-    display: inline-block;
-    padding: 9px 15px; 
-    border-radius: 8px; 
-    background-color: #2980b9; 
-    border: 2px solid #1c4966;
 }
 
 .navbar a:hover {
@@ -37,32 +80,134 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background: #fff; 
+    background: #DDD0C8;
     position: absolute;
     bottom: 0;
     left: 0;
     transition: width 0.3s ease;
-    background-color: #1c4966;
+    background-color: #6d6159;
 }
+
+.navbar a {
+    color: #323232;
+    text-decoration: none;
+    margin: 0 1%;
+    font-size: 21px;
+    position: relative;
+    display: inline-block;
+    padding: 1.2% 0.2%;
+}
+
+.navbar a:first-child{
+    font-size: 40px;
+    font-family: 'poppins', sans-serif;
+    align-self: self-start;
+    margin-right: 32%;
+}
+
 
 .navbar a:hover::after {
     width: 100%;
 }
 
-.image-buttons {
-    display: inline-block;
-    vertical-align: middle;
-    visibility: visible;
-    z-index: 1;
-}
 
-.image-buttons:hover .language-dropdown-content {
-    display: block;
-}
+/* Fin buttons dans la navbar */
+
+/* -------------------------- */
+
+
+
+
 
 .backgroundSky {
-    background: url('./Images/backgroundPortfolio.png') no-repeat center center fixed; 
+    background: url("Images/backgroundPortfolio.png") no-repeat center center fixed;
     background-size: cover; 
-    width: 100%; 
-    height: 90%; 
+    width: 100%;
+    height: 100vh;
+}
+
+.menu-button{
+    display: none;
+}
+@media only screen and (max-width: 960px) {
+
+    .name {
+        display: none;
+    }
+
+    .h4 {
+        font-size: 35px;
+    }
+
+    .statut{
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin: 5px 0;
+        display: none; /* Cachez les boutons par défaut sur les petits écrans */
+    }
+
+    .navbar a:first-child {
+        font-size: 24px;
+        margin-right: 0;
+    }
+
+    .menu-button {
+        display: inline-block;
+        font-size: 7vh;
+        padding-right: 3%;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: #323232;
+    }
+
+    .menu-button:hover::after {
+        width: 0; /* Assurez-vous que la ligne du bouton hamburger disparaît au survol */
+    }
+
+    .navbar.show-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .navbar.show-menu a {
+        display: inline-block; /* Affichez les boutons lorsque la classe .show-menu est appliquée */
+    }
+
+    .navbar.show-menu .menu-button {
+        display: none; /* Cachez le bouton de menu lorsqu'il est déjà affiché */
+    }
+
+    .statuMediaQuery{
+        display: block;
+        font-size: 3.5vh;
+    }
+
+    .nameMediaQuery{
+        display: inline-block;
+    }
+
+}
+
+.close-button {
+    flex-direction: column;
+    align-self: auto;
+    background: none;
+    border: none;
+    color: #323232;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 5.5vh;
+    padding-right: 3%;
 }
