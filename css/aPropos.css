@@ -11,6 +11,8 @@
     background-color: #DDD0C8;
 }
 
+
+
 .aPropos_Presentation{
     display: flex;
     flex-direction: column;
@@ -123,3 +125,28 @@
     background-color: #1c4966;
     
 }
+
+/* Styles généraux */
+
+.aPropos_Photo {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur du conteneur parent */
+    height: auto; /* Garantit que l'aspect ratio de l'image est préservé */
+}
+/* Ajoutez des styles spécifiques pour les grandes résolutions ici */
+
+/* Media query pour les écrans plus petits */
+@media screen and (max-width: 960px) {
+    .aPropos_Menu {
+        flex-direction: column; /* Change la direction du flux pour empiler les boutons verticalement */
+    }
+
+    .aPropos_Boutons button {
+        width: 100%; /* Prend la largeur totale du conteneur parent */
+        margin-bottom: 10px; /* Ajoute un espacement entre les boutons */
+    }
+
+    /* Ajoutez d'autres styles adaptatifs ici si nécessaire */
+}
+
+
+

@@ -6,23 +6,23 @@
   <link rel="stylesheet" href="css/index.css">
   <script src="./js/index.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="js/aPropos.js"></script>
   <link rel='stylesheet' type='text/css' media='screen' href='css/animRaimbowName.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='css/aPropos.css'>
   <title>Mon Portfolio</title>
 </head>
 <body>
-    <div class="entireNavBar">
-      <div class="navbar">
-        <a href="index.html" class="nomNav"><strong> Yannis. DF </strong></a>
-        <button class="menu-button" onclick="toggleMenu()">☰</button>
-        <a href="#aPropos">À Propos</a>
-        <a href="#">Projets</a>
-        <a href="#">Diplôme</a>
-        <a href="#">Compétences</a>
-        <a href="#">Me Contacter</a>
-        <a href="Images/backgroundPortfolio.png" download>Télécherger mon CV ↧ <!-- /!/ Mettre fichier /!/ --></a>
-        </div>
-      </div>
+    <div class="navbar" id="myTopnav">
+      <a href="index.html" class="nomNav"><strong> Yannis. DF </strong></a>
+      <a href="#aPropos">À Propos</a>
+      <a href="#Projets">Projets</a>
+      <a href="#Diplome">Diplôme</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Me Contacter</a>
+      <a href="Images/backgroundPortfolio.png" download>Télécherger mon CV ⤋ <!-- /!/ Mettre fichier /!/ --></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-batrs">≡</i>
+      </a>
     </div>
 
     <div class="accueil">
@@ -33,7 +33,6 @@
       <h4 class="statuMediaQuery">Étudiant en BUT informatique.</h4>
     </div>
 
-
     <div class="aPropos" id="aPropos">
       <div class="aPropos_divPhoto">
         <img src="Images/pp.png" alt="Photo_De_Moi" class="aPropos_Photo">
@@ -43,15 +42,14 @@
         <div class="aPropos_Menu">
 
           <div class="aPropos_Boutons">
-            <button class="aPropos_Bouton_Presentation">Présentation</button>
-            <button class="aPropos_Bouton_Langue">Langue</button>
-            <button class="aPropos_Bouton_SoftSkills">Soft skills</button>
-            <button class="aPropos_Bouton_Passions">Passions</button>
+            <button class="aPropos_Bouton_Presentation" onclick="txtPresentation()">Présentation</button>
+            <button class="aPropos_Bouton_Langue" onclick="txtLangue()">Langue</button>
+            <button class="aPropos_Bouton_SoftSkills" onclick="txtSoftSkills()">Soft skills</button>
+            <button class="aPropos_Bouton_Passions" onclick="txtPassions()">Passions</button>
           </div>
 
 
           <div class="aPropos_Contenu">
-
             <div class="aPropos_Presentation">
               <p class="para_Presentation" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, saepeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.</p>
             </div>
