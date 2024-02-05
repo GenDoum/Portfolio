@@ -1,22 +1,21 @@
-var p_Presentation = document.getElementsByClassName(".para_Presentation");
-var p_Langue = document.getElementsByClassName(".para_Langue");
-var p_SoftSkills = document.getElementsByClassName(".para_SoftSkills");
-var p_Passions = document.getElementsByClassName(".para_Passions");
+document.addEventListener('DOMContentLoaded', function() {
+    // Ne pas masquer les divs ici, car la classe aPropos_Active les affichera
+});
 
-function masquerTousLesParagraphes() {
-    var tousLesParagraphes = document.querySelectorAll('.aPropos_Contenu p');
-    tousLesParagraphes.forEach(function(paragraphe) {
-        paragraphe.style.display = "none";
+function masquerToutesLesDivs() {
+    var toutesLesDivs = document.querySelectorAll('.aPropos_Contenu > div');
+    toutesLesDivs.forEach(function(div) {
+        div.style.display = "none";
     });
 }
 
 function afficherContenu(classe) {
-    masquerTousLesParagraphes(); // Masque tous les paragraphes avant d'afficher le spécifique
-    document.querySelector(classe + ' p').style.display = "block";
+    masquerToutesLesDivs();
+    document.querySelector(classe).style.display = "block";
 }
 
 function txtPresentation() {
-    afficherContenu('.aPropos_Presentation');
+    afficherContenu('.aPropos_Presentation.aPropos_Active');
 }
 
 function txtLangue() {

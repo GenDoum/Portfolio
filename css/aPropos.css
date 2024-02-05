@@ -11,11 +11,10 @@
     background-color: #DDD0C8;
 }
 
-
-
 .aPropos_Presentation{
     display: flex;
     flex-direction: column;
+    width: 80%;
 }
 
 .aPropos_divPhoto{
@@ -38,6 +37,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .aPropos_Boutons{
     padding-left: 10%;
     padding-right: 10%;
@@ -50,8 +50,8 @@
 }
 
 .aPropos_Contenu{
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .aPropos_Contenu div {
@@ -60,6 +60,7 @@
     padding-top: 2%;
     text-align: left;
 }
+
 .aPropos_Bouton_Presentation{
 
     width: 15%;
@@ -123,18 +124,13 @@
 
 .aPropos_Bouton_Passions:hover{
     background-color: #1c4966;
-    
 }
-
-/* Styles généraux */
 
 .aPropos_Photo {
-    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur du conteneur parent */
-    height: auto; /* Garantit que l'aspect ratio de l'image est préservé */
+    max-width: 100%;
+    height: auto;
 }
-/* Ajoutez des styles spécifiques pour les grandes résolutions ici */
 
-/* Media query pour les écrans plus petits */
 @media screen and (max-width: 960px) {
     .aPropos_Menu {
         flex-direction: column; /* Change la direction du flux pour empiler les boutons verticalement */
@@ -145,8 +141,18 @@
         margin-bottom: 10px; /* Ajoute un espacement entre les boutons */
     }
 
-    /* Ajoutez d'autres styles adaptatifs ici si nécessaire */
+    .aPropos_divPhoto{
+        display: none;
+    }
+
+    .aPropos_Photo{
+        display: none;
+    }
+}
+.aPropos_Contenu > div {
+    display: none;
 }
 
-
-
+.aPropos_Contenu > div.aPropos_Active {
+    display: block;
+}

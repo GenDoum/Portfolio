@@ -12,66 +12,89 @@
   <title>Mon Portfolio</title>
 </head>
 <body>
-    <div class="navbar" id="myTopnav">
-      <a href="index.html" class="nomNav"><strong> Yannis. DF </strong></a>
-      <a href="#aPropos">À Propos</a>
-      <a href="#Projets">Projets</a>
-      <a href="#Diplome">Diplôme</a>
-      <a href="#competences">Compétences</a>
-      <a href="#contact">Me Contacter</a>
-      <a href="Images/backgroundPortfolio.png" download>Télécherger mon CV ⤋ <!-- /!/ Mettre fichier /!/ --></a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-batrs">≡</i>
-      </a>
-    </div>
+<div class="navbar" id="myTopnav">
+  <a href="index.html" class="nomNav"><strong> Yannis. DF </strong></a>
+  <a href="#aPropos">À Propos</a>
+  <a href="#Projets">Projets</a>
+  <a href="#Diplome">Diplôme</a>
+  <a href="#competences">Compétences</a>
+  <a href="#contact">Me Contacter</a>
+  <a href="Images/backgroundPortfolio.png" download>Télécherger mon CV ⤋ <!-- /!/ Mettre fichier /!/ --></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-batrs">≡</i>
+  </a>
+</div>
 
-    <div class="accueil">
-      <h4 class="bvn">Bienvenue sur mon portfolio.</h4>
-      <h1 class="name">Yannis Doumir Fernandes,</h1>
-      <h1 class="nameMediaQuery">Yannis. DF,</h1>
-      <h4 class="statut">Étudiant en BUT informatique à l'IUT de Clermont Auvergne.</h4>
-      <h4 class="statuMediaQuery">Étudiant en BUT informatique.</h4>
-    </div>
+<div class="accueil">
+  <h4 class="bvn">Bienvenue sur mon portfolio.</h4>
+  <h1 class="name">Yannis Doumir Fernandes,</h1>
+  <h1 class="nameMediaQuery">Yannis. DF,</h1>
+  <h4 class="statut">Étudiant en BUT informatique à l'IUT de Clermont Auvergne.</h4>
+  <h4 class="statuMediaQuery">Étudiant en BUT informatique.</h4>
+</div>
 
-    <div class="aPropos" id="aPropos">
-      <div class="aPropos_divPhoto">
-        <img src="Images/pp.png" alt="Photo_De_Moi" class="aPropos_Photo">
+<div class="aPropos" id="aPropos">
+  <div class="aPropos_divPhoto">
+    <img src="Images/pp.png" alt="Photo_De_Moi" class="aPropos_Photo">
+  </div>
+  <div class="aPropos_Presentation">
+
+    <div class="aPropos_Menu">
+
+      <div class="aPropos_Boutons">
+        <button class="aPropos_Bouton_Presentation" onclick="txtPresentation()">Présentation</button>
+        <button class="aPropos_Bouton_Langue" onclick="txtLangue()">Langue</button>
+        <button class="aPropos_Bouton_SoftSkills" onclick="txtSoftSkills()">Soft skills</button>
+        <button class="aPropos_Bouton_Passions" onclick="txtPassions()">Passions</button>
       </div>
-        <div class="aPropos_Presentation">
 
-        <div class="aPropos_Menu">
-
-          <div class="aPropos_Boutons">
-            <button class="aPropos_Bouton_Presentation" onclick="txtPresentation()">Présentation</button>
-            <button class="aPropos_Bouton_Langue" onclick="txtLangue()">Langue</button>
-            <button class="aPropos_Bouton_SoftSkills" onclick="txtSoftSkills()">Soft skills</button>
-            <button class="aPropos_Bouton_Passions" onclick="txtPassions()">Passions</button>
-          </div>
-
-
-          <div class="aPropos_Contenu">
-            <div class="aPropos_Presentation">
-              <p class="para_Presentation" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, saepeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.</p>
-            </div>
-
-            <div class="aPropos_Langue">
-              <p class="para_Langue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, commodi.eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
-            </div>
-
-            <div class="aPropos_SoftSkills">
-              <p class="para_SoftSkills">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, provident!eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
-            </div>
-
-            <div class="aPropos_Passions">
-              <p class="para_Passions">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore officia placeat quibusdam unde, vitae.eeeee eeeeee eeeeee eeee eeee eee eee</p>
-            </div>
-
-          </div>
+      <div class="aPropos_Contenu">
+        <div class="aPropos_Presentation aPropos_Active">
+            <p class="para_Presentation">PRESENTATION Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corporis quas, dicta maiores veniam dolore? Non assumenda praesentium recusandae doloribus!</p>
         </div>
-      </div>
-
-      
+    
+        <div class="aPropos_Langue">
+            <p class="para_Langue">LANGUELorem ipsum, dolor sit amet consectetur adipisicing elit. Minus repellendus molestiae explicabo dolor, dolorem asperiores cumque sunt tempora! Iusto, laudantium....</p>
+        </div>
+    
+        <div class="aPropos_SoftSkills">
+            <p class="para_SoftSkills">SOFTSKILLSLorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt illo omnis rerum reiciendis officiis illum numquam quos et. Officiis, eveniet!..</p>
+        </div>
+    
+        <div class="aPropos_Passions">
+            <p class="para_Passions">PASSIONSLorem ipsum dolor sit amet consectetur adipisicing elit. Atque, veritatis voluptates ut enim earum nesciunt praesentium reprehenderit modi deleniti quia!</p>
+        </div>
     </div>
 
-  </body>
-  </html>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+    
+<div class="aPropos_Contenu">
+  <div class="aPropos_Presentation">
+    <p class="para_Presentation" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, saepeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee.</p>
+  </div>
+
+  <div class="aPropos_Langue">
+    <p class="para_Langue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, commodi.eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+  </div>
+
+  <div class="aPropos_SoftSkills">
+    <p class="para_SoftSkills">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, provident!eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+  </div>
+
+  <div class="aPropos_Passions">
+    <p class="para_Passions">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore officia placeat quibusdam unde, vitae.eeeee eeeeee eeeeee eeee eeee eee eee</p>
+  </div>
+
+</div>
+</body>
+</html>
