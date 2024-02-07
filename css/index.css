@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: 'poppins', sans-serif;
-    background-color: #DDD0C8;
+    background-color: #53736D;
 }
 
 /*---- Accueil ----*/
@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 80%;
-    background-color: #DDD0C8;
+    background-color: #A69A85;
     line-height: 1.0;
     padding: 0 10%;
 }
@@ -24,27 +24,28 @@ body {
     font-size: 682%;
     margin: 0;
     padding: 0;
-    color: #6d6159;
+    color: #04090D;
 }
 .nameMediaQuery{
     display: none;
     font-size: 11.3vh;
     margin: 0;
     padding: 0;
-    color: #6d6159;
+    color: #04090D;
 }
+
 .bvn {
     font-size: 300% ;
     margin: 0;
     padding: 0 2%;
-    color: black;
+    color: #071121;
 }
 
 .statut {
     font-size: 270%;
     margin: 0;
     padding: 0 2%;
-    color: #DDD0C8;
+    color: #53736D;
 }
 
 .statuMediaQuery{
@@ -52,7 +53,7 @@ body {
     font-size: 270%;
     margin: 0;
     padding: 0 2%;
-    color: #DDD0C8;
+    color: #53736D;
 }
 
 /* Début de la nouvelle navbar */
@@ -61,26 +62,23 @@ body {
     overflow: hidden;
     position: fixed;
     width: 100%;
-    background-color: #72665e;
+    background-color: #04090D;
 }
 
+.navbar .nomNav strong{
+    color: #53736D;
+}
 .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #53736D;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
 .navbar a.active {
-    background-color: #4CAF50;
     color: white;
 }
 
@@ -101,10 +99,6 @@ body {
         font-size: 2vh;
 
     }
-
-
-
-
 }
 
 @media screen and (max-width: 960px) {

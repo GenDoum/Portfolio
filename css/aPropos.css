@@ -8,13 +8,14 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #DDD0C8;
+    background-color: #53736D;
 }
 
 .aPropos_Presentation{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    border-color: #081223;
+    border: 1px;
 }
 
 .aPropos_divPhoto{
@@ -23,7 +24,6 @@
     align-items: center;
     width: 20%;
     height: 50%;
-    background-color: rebeccapurple;
 }
 
 .aPropos_Photo{
@@ -32,12 +32,14 @@
 }
 
 .aPropos_Menu{
-    background-color: olivedrab;
+    background-color: #A69A85;
     height: 65vh;
+    min-width: 130vh;
+    max-width: 130vh;
+    width: 100vh;
     margin-left: auto;
     margin-right: auto;
     border-radius: 9px;
-
 }
 
 .aPropos_Boutons{
@@ -47,16 +49,17 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: brown;
-    right: 0;
     border-radius: 9px 9px 0 0;
+}
+
+.aPropos_Bouton button {
+    width: fit-content;
 }
 
 .aPropos_Contenu{
     padding-left: 1%;
     padding-right: 1%;
     border-radius: 9px;
-
 }
 
 .aPropos_Contenu div {
@@ -70,8 +73,7 @@
 
     width: 15%;
     height: 50px;
-    background-color: #3498db;
-    border: 2px solid #1c4966;
+    background-color: #53736D;
     border-radius: 8px;
     color: white;
     font-size: 15px;
@@ -86,8 +88,7 @@
 .aPropos_Bouton_Langue{
     width: 15%;
     height: 50px;
-    background-color: #3498db;
-    border: 2px solid #1c4966;
+    background-color: #53736D;
     border-radius: 8px;
     color: white;
     font-size: 15px;
@@ -136,9 +137,12 @@
     height: auto;
 }
 
-@media screen and (max-width: 960px) {
+
+@media screen and (max-width: 1120px) {
     .aPropos_Menu {
         flex-direction: column; /* Change la direction du flux pour empiler les boutons verticalement */
+        min-width: 80vh;
+        max-width: 80vh;
     }
 
     .navbar.responsive {
@@ -166,6 +170,8 @@
         font-size: 200%;
     }
 }
+
+
 .aPropos_Contenu > div {
     display: none;
 }
@@ -173,3 +179,4 @@
 .aPropos_Contenu > div.aPropos_Active {
     display: block;
 }
+
