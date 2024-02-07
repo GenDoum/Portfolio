@@ -12,6 +12,8 @@ function masquerToutesLesDivs() {
 function afficherContenu(classe) {
     masquerToutesLesDivs();
     document.querySelector(classe).style.display = "block";
+
+
 }
 
 function txtPresentation() {

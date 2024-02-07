@@ -16,6 +16,7 @@
     flex-direction: column;
     border-color: #081223;
     border: 1px;
+
 }
 
 .aPropos_divPhoto{
@@ -40,6 +41,8 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 9px;
+    box-shadow: 10px 10px 5px #888888;
+
 }
 
 .aPropos_Boutons{
@@ -75,14 +78,16 @@
     height: 50px;
     background-color: #53736D;
     border-radius: 8px;
+    border: 0 solid #53736D;
     color: white;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 5px 5px 3px #888888;
 }
 
 .aPropos_Bouton_Presentation:hover{
-    background-color: #DDD0C8;
+    background-color: #628b84;
 }
 
 .aPropos_Bouton_Langue{
@@ -90,46 +95,51 @@
     height: 50px;
     background-color: #53736D;
     border-radius: 8px;
+    border: 0 solid #53736D;
     color: white;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 5px 5px 3px #888888;
 }
 
 .aPropos_Bouton_Langue:hover{
-    background-color: #DDD0C8;
+    background-color: #628b84;
 }
 
 .aPropos_Bouton_SoftSkills{
     width: 15%;
     height: 50px;
-    background-color: #3498db;
-    border: 2px solid #1c4966;
+    background-color: #53736D;
     border-radius: 8px;
+    border: 0 solid #53736D;
     color: white;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 5px 5px 3px #888888;
 }
 
 .aPropos_Bouton_SoftSkills:hover{
-    background-color: #DDD0C8;
+    background-color: #628b84;
 }
 
 .aPropos_Bouton_Passions{
     width: 15%;
     height: 50px;
-    background-color: #3498db;
-    border: 2px solid #1c4966;
+    background-color: #53736D;
+    border: 0 solid #53736D;
     border-radius: 8px;
     color: white;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 5px 5px 3px #888888;
+
 }
 
 .aPropos_Bouton_Passions:hover{
-    background-color: #DDD0C8;
+    background-color: #628b84;
 }
 
 .aPropos_Photo {
@@ -140,7 +150,7 @@
 
 @media screen and (max-width: 1120px) {
     .aPropos_Menu {
-        flex-direction: column; /* Change la direction du flux pour empiler les boutons verticalement */
+        flex-direction: column;
         min-width: 80vh;
         max-width: 80vh;
     }
@@ -154,8 +164,27 @@
     }
 
     .aPropos_Boutons button {
-        width: 100%; /* Prend la largeur totale du conteneur parent */
-        margin-bottom: 10px; /* Ajoute un espacement entre les boutons */
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .aPropos_Bouton_Presentation{
+        margin-right: 2%;
+    }
+
+    .aPropos_Bouton_Langue{
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .aPropos_Bouton_SoftSkills{
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .aPropos_Bouton_Passions{
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
     .aPropos_divPhoto{
