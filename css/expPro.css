@@ -1,39 +1,84 @@
-.experience{
+.experience {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+}
+
+
+.exp {
+    top: 10px;
+    font-size: 350%;
+    color: white;
+}
+
+.contenuExp{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    background-color: #A69A85;
+    background-color: #3498db;
 }
 
-.expProfessionnel{
-    top: 0;
-    margin-top: 10%;
+.contourAsso{
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin-left: 3%;
-    margin-right: 3%;
-    padding-right: 2%;
-    padding-left: 2%;
-    background-color: #53736D;
+    background-color: #69879b;
+    border-radius: 8px;
 }
 
-.expAssiociation{
-    top: 0;
-    margin-top: 10%;
+.contourPro{
     width: 100%;
-    margin-left: 3%;
-    margin-right: 3%;
-    padding-right: 2%;
-    padding-left: 2%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    background-color: #53736D;
+    background-color: lightpink;
+    align-items: center;
 
+}
+
+.para_Asso{
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: large;
+}
+
+.expAssiociation {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: darksalmon;
+}
+
+.unif{
+    padding-left: 10%;
+    width: 200px;
+    height: 300px;
+    padding-top: 10%;
+}
+
+.horizon{
+    padding-left: 5%;
+    padding-right: 10%;
+    width: 225px;
+    height: 290px;
+    padding-top: 10%;
+
+}
+
+.royer{
+    width: 200px;
+    height: 200px;
+}
+
+.para_Pro{
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: large;
 }
