@@ -4,48 +4,70 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background-color: black;
+    background-color: #BF9BB6;
     height: 100vh;
 }
 
 
 .exp {
-    top: 10px;
+    margin-top: 5%;
+    top: 0;
     font-size: 350%;
-    color: white;
+    color: #F2F2F2;
+}
+
+.expPro{
 }
 
 .contenuExp{
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-direction: row;
-    background-color: #3498db;
+    background-color: #BF9BB6;
+    border-radius: 8px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .contourAsso{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #69879b;
-    border-radius: 8px;
+    border-radius: 40px;
+    margin: 20px;
+    background-color: #592538;
+
 }
 
 .contourPro{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: lightpink;
     align-items: center;
+    background-color: #592538;
+    border-radius: 40px;
+    margin: 20px;
 
 }
 
 .para_Asso{
-    padding-bottom: 10%;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 2%;
     font-size: large;
+    text-align: justify;
+    line-height: 1.5;
+    color: #F2F2F2;
+}
+
+.para_Pro{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 6%;
+    font-size: large;
+    text-align: justify;
+    line-height: 1.5;
+    color: #F2F2F2;
 }
 
 .expAssiociation {
@@ -53,14 +75,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: darksalmon;
 }
 
 .unif{
+    padding-top: 7%;
+    padding-bottom: 4%;
     padding-left: 10%;
     width: 200px;
     height: 300px;
-    padding-top: 10%;
 }
 
 .horizon{
@@ -68,17 +90,26 @@
     padding-right: 10%;
     width: 225px;
     height: 290px;
-    padding-top: 10%;
-
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 
 .royer{
     width: 200px;
     height: 200px;
+    padding-top: 55%;
+    padding-bottom: 22%;
 }
 
-.para_Pro{
-    padding-left: 15%;
-    padding-right: 15%;
-    font-size: large;
+.japon{
+    text-decoration: underline;
+    color: black;
+}
+strong{
+    color: #BF9BB6;
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+    color: #BF9BB6;
 }

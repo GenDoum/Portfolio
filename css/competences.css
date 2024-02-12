@@ -1,0 +1,25 @@
+.experience{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contourComp{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.compProg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.compBdd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
