@@ -1,0 +1,91 @@
+.projets{
+    text-align: center;
+}
+
+.titreProjets{
+    font-size:  xxx-large;
+}
+
+.contentProject{
+    display: block;
+    background-color: #A65390;
+}
+
+.projetScolaire{
+    text-align: start;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.scolaire{
+    padding-left: 5%
+}
+
+.contentScolaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.projetPersonnel{
+    display: flex;
+    flex-direction: column;
+}
+
+.projetScolaire div a {
+    color: black;
+    background-color: blue;
+    border-radius: 25px;
+    padding: 2%;
+}
+
+.contentScolaire div p {
+    font-size: 1.2em;
+}
+
+.contentScolaire div a {
+    font-kerning: initial;
+    width: fit-content;
+}
+
+.proAppli img {
+    width: 100%;
+    height: 50%;
+}
+
+.proMagasin{
+    padding: 1%;
+    background-color: #53736D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proPERT{
+    padding: 1%;
+    background-color: #BF9BB6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proPERT img {
+    height: 100%;
+    width: 50%;
+}
+
+.proAppli{
+    padding: 1%;
+    background-color: #A65390;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+/* Projets Scolaire */
+
+

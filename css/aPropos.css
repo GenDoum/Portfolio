@@ -32,7 +32,7 @@
 }
 
 .aPropos_Menu{
-    background-color: #A69A85;
+    background-color: #e1c4aa;
     height: 65vh;
     min-width: 130vh;
     max-width: 130vh;
@@ -40,7 +40,7 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 9px;
-    box-shadow: 10px 10px 5px #888888;
+    box-shadow: 10px 10px 5px #e1c4aa;
 
 }
 
@@ -86,7 +86,7 @@
 }
 
 .aPropos_Bouton_Presentation:hover{
-    background-color: #A65390;
+    background-color: indianred;
 }
 
 .aPropos_Bouton_Langue{
@@ -103,7 +103,7 @@
 }
 
 .aPropos_Bouton_Langue:hover{
-    background-color: #A65390;
+    background-color: indianred;
 }
 
 .aPropos_Bouton_SoftSkills{
@@ -120,7 +120,7 @@
 }
 
 .aPropos_Bouton_SoftSkills:hover{
-    background-color: #A65390;
+    background-color: indianred;
 }
 
 .aPropos_Bouton_Passions{
@@ -138,7 +138,7 @@
 }
 
 .aPropos_Bouton_Passions:hover{
-    background-color: #A65390;
+    background-color: indianred;
 }
 
 .aPropos_Photo {

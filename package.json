@@ -24,5 +24,10 @@
   "homepage": "https://github.com/GenDoum/Portfolio#readme",
   "devDependencies": {
     "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.0.5",
+    "tailwind-merge": "^2.2.1"
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +7,20 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/aPropos.css'>
     <link rel="stylesheet" href="css/expPro.css">
     <link rel="stylesheet" href="css/competences.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Mon Portfolio</title>
   </head>
   <body>
     <div class="navbar" id="myTopnav">
       <a href="index.html" class="nomNav"><strong> Yannis. DF </strong></a>
       <a href="#aPropos">À Propos</a>
-      <a href="#Projets">Projets</a>
-      <a href="#Diplome">Diplôme</a>
+      <a href="#experience">Expériences</a>
       <a href="#competences">Compétences</a>
+      <a href="#Projets">Projets</a>
       <a href="#contact">Me Contacter</a>
-      <a href="Images/backgroundPortfolio.png" download>Télécherger mon CV ⤋ <!-- /!/ Mettre fichier /!/ --></a>
+      <a href="Images/documents/cvYannisDF.pdf" download target="_blank">Télécherger mon CV ⤋ </a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-batrs">≡</i>
       </a>
@@ -32,11 +35,9 @@
     </div>
 
     <div class="aPropos" id="aPropos">
-      <div class="aPropos_divPhoto">
-        <img src="Images/pp.png" alt="Photo_De_Moi" class="aPropos_Photo">
-      </div>
-      <div class="aPropos_Presentation">
 
+      <div class="aPropos_Presentation">
+        
         <div class="aPropos_Menu">
 
           <div class="aPropos_Boutons">
@@ -48,7 +49,7 @@
 
           <div class="aPropos_Contenu">
             <div class="aPropos_Presentation aPropos_Active">
-                <p class="para_Presentation">PRESENTATION Lorem ipsum dolor sit amet consectetur adipisicing elitPRESENTATION Lorem ipsum dolor sit amet consectetur adipisicing elitPRESENTATION Lorem ipsum dolor sit amet consectetur adipisicing elitPRESENTATION Lorem ipsum dolor sit amet consectetur adipisicing elitPRESENTATION Lorem ipsum dolor sit amet consectetur adipisicing elitPRESENTATION Lorem ipsum dolor sit amet consectetur adipisicing elitPRESENTATION Lorem ipsum dolor sit amet consectetur adipisicing elitPRESENTATION Lorem ipsum dolor sit amet consectetur adipisicing elitPRESENTATION Lorem ipsum dolor sit amet consectetur adipisicing elitPRESENTATION Lorem ipsum dolor sit amet consectetur adipisicing elitPRESENTATION Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi corporis quas, dicta maiores veniam dolore? Non assumenda praesentium recusandae doloribus!</p>
+                <p class="para_Presentation">Originaire du <a href="https://fr.wikipedia.org/wiki/Luxembourg"><strong>Luxembourg</strong></a>, je fais acteullement mes études à Clermont-Ferrand. Je fait régulièrement des aller-retours entre Clermont et Saint-Étienne, là où vit ma famille. J'y ai notamment obtenu mon BAC Technologique avec spécialité Système d'Information Numérique (SIN) au <a><strong>lycée Etienne Mimard</strong></a>.</p>
             </div>
 
             <div class="aPropos_Langue">
@@ -68,8 +69,8 @@
       </div>
     </div>
 
-    <div class="experience">
-      <h3 class="exp">Mes différentes expériences</h3>
+    <div class="experience" id="experience">
+      <h3 class="exp" >Mes différentes expériences</h3>
       <div class="contenuExp">
         <div class="contourAsso">
 
@@ -79,7 +80,7 @@
             <img class="horizon" src="./Images/HorizonUniversel.png" alt="Logo Horizon">
           </div>
           <p class="para_Asso">
-            En tant que bénévole au sein de l'association étudiante <strong>Sound Dropper</strong>, j'ai pu contribuer à la réalisation d'un festival de musique dans la région de la Loire. Le festival en question est, l'Unif'estival. Mon rôle était responsable de la gestion de la buvette, j'ai supervisé et assisté les bénévoles qui y étaient avec moi, tout en prenant en charge les besoins des célébrités présentes, parmi lesquelles des DJ mondialement connus, comme <strong><a href="https://siksmusic.com/fr/">SIKS</a></strong>, un DJ producteur qui a déjà joué à l'international et notamment au Japon. Le président de l'association a reconnu mon investissement et suite à des retours d'autres personnes sur moi, il m'a proposé de fonder conjointement une nouvelle association dédiée à l'organisation d'événements diversifiés. En tant que Vice-président de cette nouvelle association, l'Horizon Universel, nous préparons actuellement notre premier événement qui aura lieu en <strong>Septembre 2024</strong>.
+            En tant que bénévole au sein de l'association étudiante <a href="https://www.helloasso.com/associations/sound-dropper"><strong>Sound Dropper</strong></a>, j'ai pu contribuer à la réalisation d'un festival de musique dans la région de la Loire. Le festival en question est, l'Unif'estival. Mon rôle était responsable de la gestion de la buvette, j'ai supervisé et assisté les bénévoles qui y étaient avec moi, tout en prenant en charge les besoins des célébrités présentes, parmi lesquelles des DJ mondialement connus, comme <strong><a href="https://siksmusic.com/fr/">SIKS</a></strong>, un DJ producteur qui a déjà joué à l'international et notamment au Japon. Le président de l'association a reconnu mon investissement et suite à des retours d'autres personnes sur moi, il m'a proposé de fonder conjointement une nouvelle association dédiée à l'organisation d'événements diversifiés. En tant que Vice-président de cette nouvelle association, l'Horizon Universel, nous préparons actuellement notre premier événement qui aura lieu en <strong>Septembre 2024</strong>.
           </p>
         </div>
         <div class="contourPro">
@@ -87,24 +88,26 @@
           <div class="expPro">
             <img class="royer" src="./Images/RoyerLogo.png" alt="Logo Royer" class="royerMaconnerie">
           </div>
-            <p class="para_Pro"> Après <strong>quatre étés d'expérience</strong> dans le domaine de la maçonnerie, j'ai acquis des compétences solides ainsi qu'une compréhension approfondie du métier. J'ai aussi appris la dureté des métiers manuels. Au fil du temps, grâce à mon <strong>investissement</strong> et à mon <strong>sérieux</strong>, j'ai gagné la confiance des chefs de chantier au sein de l'entreprise. Ils ont alors commencé à me confier des tâches à accomplir sur des chantiers complètement seul et en <strong>total autonomie</strong>. C'est une responsabilité qui m'a permis de prendre des initiatives et d'apprendre l'importance de fournir un <strong>travail de qualité</strong>.</p>
+            <p class="para_Pro"> Après <strong>quatre étés d'expérience</strong> dans l'entreprise <a href="https://maconnerie-royer.fr/"><strong>Royer Maçonnerie</a> </strong>, j'ai acquis des compétences solides ainsi qu'une compréhension approfondie du métier. J'ai aussi appris la dureté des métiers manuels. Au fil du temps, grâce à mon <strong>investissement</strong> et à mon <strong>sérieux</strong>, j'ai gagné la confiance des chefs de chantier au sein de l'entreprise. Ils ont alors commencé à me confier des tâches à accomplir sur des chantiers complètement seul et en <strong>total autonomie</strong>. C'est une responsabilité qui m'a permis de prendre des initiatives et d'apprendre l'importance de fournir un <strong>travail de qualité</strong>.</p>
         </div>
       </div>
     </div>
 
-    <div class="competences">
+
+    1
+    <div class="competences" id="competences">
       <h3 class="titreComp">Mes compétences</h3>
       <div class="contourComp">
         <div class="compProg">
           <h3 class="titreProg">Programmation</h3>
           <div class="contentProg">
-            <img src="Images/logos/html.png" alt="HTML">
-            <img src="Images/logos/css.png" alt="CSS">
             <img src="Images/logos/c.png" alt="C">
             <img src="Images/logos/cpp.png" alt="C++">
-            <img src="Images/logos/net.png" alt=".NET7">
-            <img src="Images/logos/python.png" alt="Python">
             <img src="Images/logos/csharp.png" alt="C#">
+            <img src="Images/logos/html.png" alt="HTML">
+            <img src="Images/logos/css.png" class="py"alt="CSS">
+            <img src="Images/logos/python.png" alt="Python">
+            <img src="Images/logos/net.png" alt=".NET7">
           </div>
         </div>
         <div class="compBdd">
@@ -117,24 +120,177 @@
       </div>
     </div>
 
-    <div class="projets">
-      <div class="projetsAll">
-        <h3 class="titreProjets">Mes différents projet</h3>
-        <div class="contentProject">
-          <div class="projetScolaire">
+    <a href="" id="Projets"></a>
+    <div class="projectsDiv" >
+      <section class="section" id="projects">
+        <div class="top-header">
+          <h1>Mes projets scolaire</h1>
+        </div>
+        <div class="project-container">
+          <div class="card-content">
+            <header class="card-header">
+              <div class="card-social">
+                <a href="https://github.com/GenDoum/SAE2.01_DeveloppementApplication" target="_blank">
+                  Accéder au dépôt
+                </a>
+              </div>
+            </header>
 
+            <div class="card-data">
+              <div class="card-image">
+                <div class="card-mask">
+                  <a href="https://github.com/GenDoum/SAE2.01_DeveloppementApplication" target="_blank">
+                    <img src="Images/mineLogo.png" alt="image" class="card_img">
+                  </a>
+                </div>
+              </div>
+              <h2 class="card-name">Mine Guide</h2>
+              <h3 class="card-resume">MineGuide est une application que j'ai réalisée qui a pour but d'aider les nouveaux utilisateurs du jeu Minecraft. Il s'agit d'un guide complet sur toutes les entités du jeu, animaux, monstres et boss. Vous pouvez y retrouver pour chacun tout ce qui les concerne, et leurs différentes apparences.</h3>
+            </div>
           </div>
-          <div class="projetPersonnel">
+          <div class="card-content">
+            <header class="card-header">
+              <div class="card-social">
+                <a href="https://github.com/GenDoum/Portfolio" target="_blank">
+                  Accéder au dépôt
+                </a>
+              </div>
+            </header>
 
+            <div class="card-data">
+              <div class="card-image">
+                <div class="card-mask">
+                  <a href="https://github.com/GenDoum/Portfolio" target="_blank">
+                    <img src="Images/pp.png" alt="image" class="card__img">
+                  </a>
+                </div>
+              </div>
+              <h2 class="card-name">Portfolio</h2>
+              <h3 class="card-resume">Ce projet est mon portfolio, vous êtes en train d'y accéder. J'espère qu'il vous plaît et que vous apprendrez à me connnaître en le consultant.</h3>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <header class="card-header">
+              <div class="card-social">
+                <a href="https://github.com/GenDoum/SAE1.02_Gestion-ComparaisonDevisMaison" target="_blank">
+                  Accéder au dépôt
+                </a>
+              </div>
+            </header>
+
+            <div class="card-data">
+              <div class="card-image">
+                <div class="card-mask">
+                  <a href="https://github.com/GenDoum/SAE1.02_Gestion-ComparaisonDevisMaison" target="_blank">
+                    <img src="Images/bin.png" alt="image" class="card__img">
+                  </a>
+                </div>
+              </div>
+              <h2 class="card-name">Méthode PERT (Language C)</h2>
+              <h3 class="card-resume">Ce projet consistait à implémenter la méthode PERT pour la planification dans le temps des tâches dans un projet de construction de maison en langage C.</h3>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
+    <br><br>
+
+
+    <!-- UNIF ESTIVAL -->
+
+    <div class="projectsDiv">
+      <section class="section" id="projects">
+        <div class="top-header">
+          <h1>Mes projets personnels</h1>
+        </div>
+        <div class="project-container persoprjets">
+          <div class="card-content">
+            <header class="card-header">
+              <div class="card-social">
+                <a href="https://www.instagram.com/unif.estival/" target="_blank">
+                  <span>Accéder à l'instagram</span>
+                </a>
+              </div>
+
+              <div class="card-social">
+                <a href="https://github.com/GenDoum/SAE2.01_DeveloppementApplication" target="_blank">
+                </a>
+              </div>
+            </header>
+
+            <div class="card-data">
+              <div class="card-image">
+                <div class="card-mask">
+                  <a href="https://github.com/GenDoum/SAE2.01_DeveloppementApplication" target="_blank">
+                    <img src="Images/unif.jpg" alt="image" class="card_img">
+                  </a>
+                </div>
+              </div>
+              <h2 class="card-name">Unif'estival</h2>
+              <h3 class="card-resume">L'Unif'estival est un festival de musique annuel organisé par une association d'étudiant Sound Dropper. J'ai eu l'occasion de m'occuper de plusieurs choses le jour de l'événement, gestion du personnel de la buvette, gestion des stocks et des besoins des artistes sur place.</h3>
+            </div>
+          </div>
+          <!-- HORIZON UNIVERSEL -->
+
+          <div class="card-content">
+            <header class="card-header">
+              <div class="card-social">
+                <a href="https://www.linkedin.com/in/yannis-doumir-fernandes/" target="_blank">
+                  <span>Accéder à mon linkedin</span>
+                </a>
+              </div>
+            </header>
+            <div class="card-data">
+              <div class="card-image">
+                <div class="card-mask">
+                  <a href="https://www.linkedin.com/in/yannis-doumir-fernandes/" target="_blank">
+                    <img src="Images/HU.png" alt="image" class="card__img">
+                  </a>
+                </div>
+              </div>
+              <h2 class="card-name">Horizon Universel</h2>
+              <h3 class="card-resume">L'Horizon Universel est une association fondée en collaboration avec le président de Sound Dropper. Notre but est d'organiser un événement annuel avec des thèmes toujours différents et ceux dans la Loire. Notre premier événement sera sur la pop culture japonaise, et aura lieu en septembre prochain. Une partie des bénéfices sera reversée à une association qui vient en aide aux enfants dans les hôpitaux de la Loire, département de l'association.</h3>
+            </div>
+          </div>
+      </div>
+        <br><br><br><br>
+
+        <section id="contact" class="contact main-section">
+          <div class="main-container">
+            <div class="main-section__content">
+              <div class="contact__form-cont">
+                <h1 class="contactme">Me contacter</h1>
+                <form class="contact__form">
+                  <div class="contact__form-field">
+                    <label for="subject" class="contact__form-field-label">Sujet</label>
+                    <input placeholder="Motif du message" type="text" class="contact__form-field-input" />
+                  </div>
+                  <div class="contact__form-field">
+                    <label for="name" class="contact__form-field-label">Email</label>
+                    <input placeholder="Entrez votre email" type="text" class="contact__form-field-input" />
+                  </div>
+                  <div class="contact__form-field">
+                    <label for="name" class="contact__form-field-label">Message</label>
+                    <textarea placeholder="Entrez un message" name="message" id="" cols="30" rows="10"
+                              class="contact__form-field-input"></textarea>
+                  </div>
+                  <button type="submit" class="contact__form-submit">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+  <br><br><br><br>
 
 
 
     <script src="./js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="js/aPropos.js"></script>
+    <script></script>
   </body>
 </html>
