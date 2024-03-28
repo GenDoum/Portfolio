@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: 'poppins', sans-serif;
-    background-color: #e1c4aa;
+    background-color: #eae3e3;
 }
 
 /*---- Accueil ----*/
@@ -15,7 +15,6 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 80%;
-    background-color: #e1c4aa;
     line-height: 1.0;
     padding: 0 10%;
 }
@@ -24,14 +23,14 @@ body {
     font-size: 682%;
     margin: 0;
     padding: 0;
-    color: #592538;
+    color: #412944;
 }
 .nameMediaQuery{
     display: none;
     font-size: 11.3vh;
     margin: 0;
     padding: 0;
-    color: #592538;
+    color: #412944;
 }
 
 .bvn {
@@ -61,18 +60,48 @@ body {
 .navbar {
     overflow: hidden;
     position: fixed;
-    width: 100%;
-    background-color: #592538;
+    width: calc(100% - 40px);
+    background-color: transparent;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    transition: padding-top 300ms, padding-bottom 300ms, background-color 300ms;
+}
+
+.navbar .nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+.is-sticky {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    background-color: transparent !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+}
+
+.is-sticky a {
+    color: #1c1b1b !important;
 }
 
 .navbar .nomNav strong{
-    color: #e1c4aa;
+    color: #1c1b1b;
+    font-size: 150%;
+    text-decoration: none;
 }
 .navbar a {
     float: left;
     display: block;
-    color: #e1c4aa;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -99,9 +128,13 @@ body {
         display: block;
         font-size: 2vh;
     }
+
+    .navbar .nav a {
+        font-size: 80%;
+    }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1040px) {
 
     .navbar {
         position: fixed;
@@ -157,7 +190,7 @@ a::before {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #BF9BB6; /* Couleur du soulignement */
+    background-color: #412944; /* Couleur du soulignement */
     visibility: hidden;
     transform: scaleX(0);
     transition: all 0.3s ease-in-out;

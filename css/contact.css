@@ -1,25 +1,25 @@
 .contactme{
     font-size: 3rem;
-    color: #e1c4aa;
+    color: #412944;
     text-align: center;
 }
 
 .contact {
     height: 0;
-    color: #592538;
+    color: #412944;
 }
 
 .contact__form-cont {
     overflow: auto;
     box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
     margin-top: 5%;
-    background-color: #592538;
-    border-radius: 35px;
+    background-color: #d1c7cb;
+    border-radius: 15px;
 
 }
 
 .contact__form {
-    background-color: #592538;
+    background-color: #d1c7cb;
     padding: 5em;
     margin: 0  10% 10% 10%;
 }
@@ -47,7 +47,7 @@
 .contact__form-field-label {
     font-size: 1.2rem;
     text-transform: uppercase;
-    color: #e1c4aa;
+    color: #414040;
     letter-spacing: 1px;
     margin-bottom: 1rem;
 }
@@ -56,9 +56,9 @@
     display: block;
     padding: 1rem;
     width: 100%;
-    border: 1px solid #e1c4aa;
-    background-color: #e1c4aa;
-
+    border: 1px solid #414040;
+    background-color: #eae3e3;
+    color: #414040;
     font-size: 1.2rem;
     resize: none;
     border-radius: 5px;
@@ -74,19 +74,19 @@
 
 
 .contact__form-field-input::placeholder {
-    color: rgb(175, 175, 175);
+    color: #414040;
     font-weight: 400;
     font-size: 1.2rem;
 }
 
 .contact__form-field-input::-webkit-input-placeholder {
-    color: #e1c4aa;
+    color: #414040;
     font-weight: 200;
     font-size: 1.2rem;
 }
 
 .contact__form-field-input:-ms-input-placeholder {
-    color: rgb(175, 175, 175);
+    color: #412944;
     font-weight: 200;
     font-size: 1.2rem;
 }

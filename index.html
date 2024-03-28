@@ -13,18 +13,20 @@
     <title>Mon Portfolio</title>
   </head>
   <body>
-    <div class="navbar" id="myTopnav">
-      <a href="index.html" class="nomNav"><strong> Yannis. DF </strong></a>
-      <a href="#aPropos">À Propos</a>
-      <a href="#experience">Expériences</a>
-      <a href="#competences">Compétences</a>
-      <a href="#Projets">Projets</a>
-      <a href="#contact">Me Contacter</a>
-      <a href="Images/documents/cvYannisDF.pdf" download target="_blank">Télécherger mon CV ⤋ </a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-batrs">≡</i>
-      </a>
-    </div>
+  <div class="navbar" id="myTopnav">
+    <a href="index.html" class="nomNav"><strong> Yannis. DF </strong></a>
+      <div class="nav">
+        <a href="#aPropos">À Propos</a>
+        <a href="#experience">Expériences</a>
+        <a href="#competences">Compétences</a>
+        <a href="#Projets">Projets</a>
+        <a href="#contact">Me Contacter</a>
+        <a href="Images/documents/cvYannisDF.pdf" download target="_blank">Télécharger mon CV ⤋ </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-batrs">≡</i>
+        </a>
+      </div>
+  </div>
 
     <div class="accueil ">
       <h4 class="bvn">Bienvenue sur mon portfolio.</h4>
@@ -34,17 +36,20 @@
       <h4 class="statuMediaQuery">Étudiant en BUT informatique.</h4>
     </div>
 
-    <div class="aPropos" id="aPropos">
+  <h3 class="aboutMe" >À propos de moi</h3>
+
+
+    <div class="aPropos" id="aPropos hidden">
 
       <div class="aPropos_Presentation">
-        
+
         <div class="aPropos_Menu">
 
           <div class="aPropos_Boutons">
-            <button class="aPropos_Bouton_Presentation" onclick="txtPresentation()">Présentation</button>
-            <button class="aPropos_Bouton_Langue" onclick="txtLangue()">Langue</button>
-            <button class="aPropos_Bouton_SoftSkills" onclick="txtSoftSkills()">Soft skills</button>
-            <button class="aPropos_Bouton_Passions" onclick="txtPassions()">Passions</button>
+            <button class="aPropos_Bouton" onclick="txtPresentation()">Présentation</button>
+            <button class="aPropos_Bouton" onclick="txtLangue()">Langue</button>
+            <button class="aPropos_Bouton" onclick="txtSoftSkills()">Soft skills</button>
+            <button class="aPropos_Bouton" onclick="txtPassions()">Passions</button>
           </div>
 
           <div class="aPropos_Contenu">
@@ -80,7 +85,7 @@
             <img class="horizon" src="./Images/HorizonUniversel.png" alt="Logo Horizon">
           </div>
           <p class="para_Asso">
-            En tant que bénévole au sein de l'association étudiante <a href="https://www.helloasso.com/associations/sound-dropper"><strong>Sound Dropper</strong></a>, j'ai pu contribuer à la réalisation d'un festival de musique dans la région de la Loire. Le festival en question est, l'Unif'estival. Mon rôle était responsable de la gestion de la buvette, j'ai supervisé et assisté les bénévoles qui y étaient avec moi, tout en prenant en charge les besoins des célébrités présentes, parmi lesquelles des DJ mondialement connus, comme <strong><a href="https://siksmusic.com/fr/">SIKS</a></strong>, un DJ producteur qui a déjà joué à l'international et notamment au Japon. Le président de l'association a reconnu mon investissement et suite à des retours d'autres personnes sur moi, il m'a proposé de fonder conjointement une nouvelle association dédiée à l'organisation d'événements diversifiés. En tant que Vice-président de cette nouvelle association, l'Horizon Universel, nous préparons actuellement notre premier événement qui aura lieu en <strong>Septembre 2024</strong>.
+            En tant que bénévole pour l'association étudiante <a href="https://www.helloasso.com/associations/sound-dropper"><strong>Sound Dropper</strong></a>, j'ai contribué à l'organisation du fesstival l'Unif'estival dans la région de la Loire, supervisant la gestion de la buvette et aidant d'autres bénévoles. J'ai également pris en charge les besoins des artistes, dont des DJ nationalement et mondialement connu, comme <strong><a href="https://siksmusic.com/fr/">SIKS</a></strong>. Mon investissement a été reconnu par le président de l'association, qui m'a proposé de fonder une nouvelle association, <strong>l'Horizon Universel</strong>, dédiée à l'organisation d'événements divers. En tant que Vice-président, nous préparons actuellement notre premier événement pour septembre 2024.
           </p>
         </div>
         <div class="contourPro">
@@ -88,13 +93,13 @@
           <div class="expPro">
             <img class="royer" src="./Images/RoyerLogo.png" alt="Logo Royer" class="royerMaconnerie">
           </div>
-            <p class="para_Pro"> Après <strong>quatre étés d'expérience</strong> dans l'entreprise <a href="https://maconnerie-royer.fr/"><strong>Royer Maçonnerie</a> </strong>, j'ai acquis des compétences solides ainsi qu'une compréhension approfondie du métier. J'ai aussi appris la dureté des métiers manuels. Au fil du temps, grâce à mon <strong>investissement</strong> et à mon <strong>sérieux</strong>, j'ai gagné la confiance des chefs de chantier au sein de l'entreprise. Ils ont alors commencé à me confier des tâches à accomplir sur des chantiers complètement seul et en <strong>total autonomie</strong>. C'est une responsabilité qui m'a permis de prendre des initiatives et d'apprendre l'importance de fournir un <strong>travail de qualité</strong>.</p>
+            <p class="para_Pro"> Après <strong>quatre étés d'expérience</strong> dans l'entreprise <a href="https://maconnerie-royer.fr/"><strong>Royer Maçonnerie</a> </strong>, j'ai acquis des compétences solides ainsi qu'une compréhension approfondie du métier. J'ai aussi appris la dureté des métiers manuels. Au fil du temps, grâce à mon <strong>investissement</strong>, j'ai gagné la confiance des chefs de chantier  de l'entreprise. Ils ont alors commencé à me confier des tâches à accomplir sur des chantiers en total autonomie. C'est une responsabilité qui m'a permis de prendre des initiatives et d'apprendre l'importance de fournir un <strong>travail de qualité</strong>.</p>
         </div>
       </div>
     </div>
 
 
-    1
+
     <div class="competences" id="competences">
       <h3 class="titreComp">Mes compétences</h3>
       <div class="contourComp">
@@ -228,7 +233,7 @@
                 </div>
               </div>
               <h2 class="card-name">Unif'estival</h2>
-              <h3 class="card-resume">L'Unif'estival est un festival de musique annuel organisé par une association d'étudiant Sound Dropper. J'ai eu l'occasion de m'occuper de plusieurs choses le jour de l'événement, gestion du personnel de la buvette, gestion des stocks et des besoins des artistes sur place.</h3>
+              <h3 class="card-resume">L'Unif'estival est un festival de musique annuel organisé par une association d'étudiant Sound Dropper. J'ai eu l'occasion de m'occuper de plusieurs points le jour de l'événement, gestion du personnel de la buvette, gestion des stocks et des besoins des artistes sur place.</h3>
             </div>
           </div>
           <!-- HORIZON UNIVERSEL -->
@@ -250,7 +255,7 @@
                 </div>
               </div>
               <h2 class="card-name">Horizon Universel</h2>
-              <h3 class="card-resume">L'Horizon Universel est une association fondée en collaboration avec le président de Sound Dropper. Notre but est d'organiser un événement annuel avec des thèmes toujours différents et ceux dans la Loire. Notre premier événement sera sur la pop culture japonaise, et aura lieu en septembre prochain. Une partie des bénéfices sera reversée à une association qui vient en aide aux enfants dans les hôpitaux de la Loire, département de l'association.</h3>
+              <h3 class="card-resume">L'Horizon Universel est une association dont je suis le vice-président, fondée en collaboration avec le président de Sound Dropper. Notre but est d'organiser un événement annuel avec des thèmes toujours différents et ceux dans la Loire. Notre premier événement sera sur la pop culture japonaise, et aura lieu en septembre prochain. Une partie des bénéfices sera reversée à une association qui vient en aide aux enfants dans les hôpitaux de la Loire, département de l'association.</h3>
             </div>
           </div>
       </div>
@@ -291,6 +296,5 @@
     <script src="./js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="js/aPropos.js"></script>
-    <script></script>
   </body>
 </html>

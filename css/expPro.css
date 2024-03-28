@@ -1,10 +1,7 @@
 .experience {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-direction: column;
-    background-color: #e1c4aa;
     height: 100vh;
 }
 
@@ -12,62 +9,61 @@
 .exp {
     margin-top: 5%;
     top: 0;
+    margin-left: 10%;
     font-size: 350%;
-    color: #592538;
+    color: #1c1b1b;
 }
 
 .expPro{
 }
 
 .contenuExp{
-    width: 100%;
+    width: 90%;
     display: flex;
-    flex-direction: row;
-    background-color: #e1c4aa;
     border-radius: 8px;
     margin-left: 10%;
-    margin-right: 10%;
 }
 
 .contourAsso{
-    width: 100%;
+    width: 800px;
     display: flex;
     flex-direction: column;
-    border-radius: 40px;
-    margin: 20px;
-    background-color: #592538;
+    border-radius: 15px;
+    margin: 15px;
+    background-color: #d1c7cb;
 
 }
 
 .contourPro{
-    width: 100%;
+    width: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #592538;
-    border-radius: 40px;
+    background-color: #d1c7cb;
+    border-radius: 15px;
     margin: 20px;
 
 }
 
 .para_Asso{
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 4%;
+    padding-right: 4%;
     padding-bottom: 2%;
     font-size: large;
     text-align: justify;
     line-height: 1.5;
-    color: #F2F2F2;
+    color: #1c1b1b;
 }
 
 .para_Pro{
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 6%;
+
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 14%;
     font-size: large;
     text-align: justify;
     line-height: 1.5;
-    color: #F2F2F2;
+    color: #1c1b1b;
 }
 
 .expAssiociation {
@@ -81,24 +77,23 @@
     padding-top: 7%;
     padding-bottom: 4%;
     padding-left: 10%;
-    width: 200px;
-    height: 300px;
+    width: 160px;
+    height: 260px;
 }
 
 .horizon{
     padding-left: 5%;
     padding-right: 10%;
-    width: 225px;
-    height: 290px;
+    width: 185px;
+    height: 250px;
     padding-top: 7%;
     padding-bottom: 7%;
 }
 
 .royer{
-    width: 200px;
-    height: 200px;
-    padding-top: 55%;
-    padding-bottom: 22%;
+    width: 160px;
+    height: 160px;
+    padding-top: 58%;
 }
 
 .japon{
@@ -106,10 +101,10 @@
     color: black;
 }
 strong{
-    color: #BF9BB6;
+    color: #412944;
     text-decoration: underline;
 }
 a {
     text-decoration: none;
-    color: #BF9BB6;
+    color: #412944;
 }

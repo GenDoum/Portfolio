@@ -8,12 +8,10 @@
 
 .contentProject{
     display: block;
-    background-color: #A65390;
 }
 
 .projetScolaire{
     text-align: start;
-    background-color: cornflowerblue;
     display: flex;
     flex-direction: column;
 }
@@ -35,8 +33,7 @@
 
 .projetScolaire div a {
     color: black;
-    background-color: blue;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 2%;
 }
 

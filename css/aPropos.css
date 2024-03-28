@@ -1,13 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.aboutMe {
+    margin-left: 10%;
+    font-size: 350%;
+    color: #1c1b1b;
+}
+
+.hiddon{
+    opcacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion)
+{
+    .hidden {
+        transition: none;
+    }
+}
 
 
 .aPropos{
-    margin-top: 7vh;
+    margin-top: 3vh;
     height: 80vh;
     display: flex;
-    justify-content: space-evenly;
+    margin-left: 10%;
     align-items: center;
-    background-color: #592538;
+}
+
+.aPropos_Animate{
+    position: relative;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
 }
 
 .aPropos_Presentation{
@@ -32,15 +72,15 @@
 }
 
 .aPropos_Menu{
-    background-color: #e1c4aa;
+    background-color: #d1c7cb;
     height: 65vh;
     min-width: 130vh;
     max-width: 130vh;
     width: 100vh;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 9px;
-    box-shadow: 10px 10px 5px #e1c4aa;
+    border-radius: 15px;
+
 
 }
 
@@ -51,7 +91,6 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 9px 9px 0 0;
 }
 
 .aPropos_Bouton button {
@@ -61,7 +100,6 @@
 .aPropos_Contenu{
     padding-left: 1%;
     padding-right: 1%;
-    border-radius: 9px;
 }
 
 .aPropos_Contenu div {
@@ -71,81 +109,30 @@
     text-align: left;
 }
 
-.aPropos_Bouton_Presentation{
+.aPropos_Bouton{
 
     width: 15%;
     height: 50px;
-    background-color: #592538;
+    background-color: #eae3e3;
+    color: #414040;
     border-radius: 8px;
-    border: 0 solid #592538;
-    color: white;
+    border: 0 solid;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 5px 5px 3px #888888;
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1);
+    transition: all 350ms;
 }
 
-.aPropos_Bouton_Presentation:hover{
-    background-color: indianred;
-}
-
-.aPropos_Bouton_Langue{
-    width: 15%;
-    height: 50px;
-    background-color: #592538;
-    border-radius: 8px;
-    border: 0 solid #592538;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 5px 5px 3px #888888;
-}
-
-.aPropos_Bouton_Langue:hover{
-    background-color: indianred;
-}
-
-.aPropos_Bouton_SoftSkills{
-    width: 15%;
-    height: 50px;
-    background-color: #592538;
-    border-radius: 8px;
-    border: 0 solid #592538;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 5px 5px 3px #888888;
-}
-
-.aPropos_Bouton_SoftSkills:hover{
-    background-color: indianred;
-}
-
-.aPropos_Bouton_Passions{
-    width: 15%;
-    height: 50px;
-    background-color: #592538;
-    border: 0 solid #592538;
-    border-radius: 8px;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 5px 5px 3px #888888;
-
-}
-
-.aPropos_Bouton_Passions:hover{
-    background-color: indianred;
+.aPropos_Bouton:hover{
+    background-color: #412944;
+    color: #eae3e3;
 }
 
 .aPropos_Photo {
     max-width: 100%;
     height: auto;
 }
-
 
 @media screen and (max-width: 1120px) {
     .aPropos_Menu {
@@ -165,6 +152,8 @@
     .aPropos_Boutons button {
         width: 100%;
         margin-bottom: 10px;
+        justify-content: space-between;
+        font-size: 90%;
     }
 
     .aPropos_Bouton_Presentation{

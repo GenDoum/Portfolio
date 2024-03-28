@@ -1,18 +1,14 @@
 .competences{
-    display: block;
-    text-align: center;
     height: 100vh;
     width: 100%;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    background-color: #592538;
 }
 
 .titreComp{
     padding-top: 2%;
     font-size: 350%;
-    color: #e1c4aa;
+    color: #1c1b1b;
+    margin-left: 10%;
 }
 
 .contourComp{
@@ -21,7 +17,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #592538;
     height: 80%;
 }
 
@@ -30,9 +25,9 @@
     flex-direction: column;
     align-items: center;
     width: 35%;
-    background-color: #e1c4aa;
-    border-radius: 25px;
-    height: 100%;
+    background-color: #d1c7cb;
+    border-radius: 15px;
+    height: 80%;
     margin-bottom: 50px;
 }
 
@@ -42,9 +37,9 @@
     align-items: center;
     width: 35%;
     justify-content: space-between;
-    background-color: #e1c4aa;
-    border-radius: 25px;
-    height: 100%;
+    background-color: #d1c7cb;
+    border-radius: 15px;
+    height: 80%;
     margin-bottom: 50px;
 
 }
@@ -52,20 +47,20 @@
 .titreProg{
     margin-top: 10%;
     font-size: x-large;
-    background-color: #592538;
+    background-color: #eae3e3;
     padding: 1.5%;
     border-radius: 5px;
-    color: #e1c4aa;
+    color: #414040;
 }
 
 .titreBDD{
     margin-top: 10%;
     font-size: x-large;
-    background-color: #592538;
+    background-color: #eae3e3;
     padding: 1%;
     padding: 1.5%;
     border-radius: 5px;
-    color: #e1c4aa;
+    color: #414040;
 }
 
 .contentProg{
@@ -73,7 +68,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #e1c4aa;
     width: 70%;
     justify-content: center;
     row-gap: 20px;
@@ -90,6 +84,5 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #e1c4aa;
 }
 
