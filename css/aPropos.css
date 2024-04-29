@@ -18,6 +18,7 @@
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+
 }
 
 @media(prefers-reduced-motion)
@@ -56,6 +57,13 @@
     border-color: #081223;
     border: 1px;
 
+}
+
+.aPropos_Langue{
+    display: flex;
+    flex-direction: column;
+    border-color: #081223;
+    border: 1px;
 }
 
 .aPropos_divPhoto{
@@ -197,3 +205,21 @@
     display: block;
 }
 
+.para_Presentation{
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 1.5;
+    color: #1c1b1b;
+}
+
+.para_Langue{
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 1.5;
+    color: #1c1b1b;
+}
+
+.para_Presentation langue{
+
+}
