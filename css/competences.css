@@ -29,6 +29,7 @@
     border-radius: 15px;
     height: 80%;
     margin-bottom: 50px;
+
 }
 
 .compBdd{
@@ -57,7 +58,6 @@
     margin-top: 10%;
     font-size: x-large;
     background-color: #eae3e3;
-    padding: 1%;
     padding: 1.5%;
     border-radius: 5px;
     color: #414040;
@@ -68,7 +68,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    width: 70%;
     justify-content: center;
     row-gap: 20px;
 }
@@ -77,12 +76,31 @@
     margin-right: 15px;
 }
 .contentBDD{
-    padding-top: 20%;
     margin-bottom: 100%;
     width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+}
+
+.compProg p{
+    font-size: 1.2em;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0em;
+    color: #2c2c2c;
+    text-align: justify;
+
+}
+
+.contentProg p{
+    font-size: 1.2em;
+    margin-top: 0;
+    color: #2c2c2c;
+    text-align: justify;
+    margin-left: -40%;
+    margin-right: -40%;
 }
 

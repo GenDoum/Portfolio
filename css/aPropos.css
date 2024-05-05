@@ -56,14 +56,11 @@
     flex-direction: column;
     border-color: #081223;
     border: 1px;
-
+    margin-top: -2%;
 }
 
-.aPropos_Langue{
-    display: flex;
-    flex-direction: column;
-    border-color: #081223;
-    border: 1px;
+.aPropos_Langue img{
+    width: 30%;
 }
 
 .aPropos_divPhoto{
@@ -213,13 +210,24 @@
 }
 
 .para_Langue{
-    font-size: 1.7em;
+    font-size: 2.5em;
     font-weight: bold;
     text-align: justify;
     line-height: 1.5;
     color: #1c1b1b;
 }
 
-.para_Presentation langue{
+.langue{
+    font-size: 1.8em;
+    text-align: justify;
+    line-height: 1.5;
+    margin-left: 4%;
+}
 
+.aPropos_Passions {
+    display: flex;
+    flex-direction: row;
+}
+.videoMuscu {
+    width: 250px;
 }
