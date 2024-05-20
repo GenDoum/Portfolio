@@ -11,7 +11,6 @@
 
 .contact__form-cont {
     overflow: auto;
-    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
     margin-top: 5%;
     background-color: #d1c7cb;
     border-radius: 15px;
